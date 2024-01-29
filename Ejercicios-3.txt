@@ -1,0 +1,49 @@
+https://github.com/santiwik/Ejercicios-3
+Ejercicios (3) Daniel Santiso Candel
+
+1. Ejercicio 1
+	git branch bibliografia
+	git branch
+
+2. Ejercicio 2
+	1. mkdir capitulos
+	   cd capitulos
+	   echo no se que poner, en el ejercicio no sale nada > capitulo4.txt
+	2. git add capitulo4.txt
+	3. git commit -m "Añadido capitulo 4."
+	4. git log --graph --all --oneline
+
+3. Ejercicio 3
+	1. git checkout bibliografia
+	2. echo Chacon, S. and Straub, B. Pro Git. Apress. > bibliografia.txt
+	3. git add bibliografia.txt
+	4. git commit -m "Añadida primera referencia bibliográfica."
+	5. git log --graph --all --oneline
+
+4. Ejercicio 4
+	1. git checkout main
+	   git merge bibliografia
+	2. git log --graph --all --oneline
+	3. git branch -d bibliografia
+	4. git log --graph --all --oneline
+
+5. Ejercicio 5
+	1. git branch bibliografia
+	2. git checkout bibliografia
+	3. echo Scott Chacon and Ben Straub. Pro Git. Apress. > bibliografia.txt
+	   echo Ryan Hodson. Ry’s Git Tutorial. Smashwords (2014) >> bibliografia.txt
+	4. git add bibliografia.txt
+	   git commit -m "Añadida nueva referencia bibliográfica."
+	5. git checkout main
+	6. echo Chacon, S. and Straub, B. Pro Git. Apress. > bibliografia.txt
+	   echo Loeliger, J. and McCullough, M. Version control with Git. O’Reilly. >> bibliografia.txt
+	7. git add bibliografia.txt
+	   git commit -m "Añadida nueva referencia bibliográfica."
+	8. git merge bibliografia
+	9. echo Chacon, S. and Straub, B. Pro Git. Apress. > bibliografia.txt
+	   echo Loeliger, J. and McCullough, M. Version control with Git. O’Reilly. >> bibliografia.txt
+	   echo Hodson, R. Ry’s Git Tutorial. Smashwords (2014) >> bibliografia.txt
+	10. git commit -m "Solucionado conflicto bibliografía."
+	11. git log --graph --all --oneline
+
+	
